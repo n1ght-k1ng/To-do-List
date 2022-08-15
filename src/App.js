@@ -20,7 +20,7 @@ function App() {
   const deleteitem = (id)=>{
     setItems((prevItems)=>{
       return prevItems.filter((item,index)=>{
-        return index!=id
+        return (index!==id)
       })
     })
   }
